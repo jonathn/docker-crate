@@ -170,7 +170,8 @@
   [id]
   (exec-checked-script
    "docker kill"
-   ("docker" kill ~id)))
+   ("docker" kill ~id)
+   ("docker" rm ~id)))
 
 (defplan commit
   "Commit a container"
